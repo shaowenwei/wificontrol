@@ -1,0 +1,246 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/main">
+
+	<TextView 
+		android:text="wifi家电远程控制" 
+		android:layout_width="wrap_content" 
+		android:textSize="24dip"
+		android:id="@+id/textView1" 
+		android:layout_height="wrap_content"
+		android:textColor="#FFFF00"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dip"
+	></TextView>
+	
+		<RelativeLayout
+	    android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="10dip">
+        <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dip"
+		android:textColor="#FFFFFF"
+        android:text="温  度: "
+        tools:context=".LoginActivity" />
+	<EditText
+        android:id="@+id/editText_t"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView3"
+        android:ems="10"
+        android:editable="false"
+        android:minWidth="100dip"
+        android:text="00 'C" />
+	</RelativeLayout>
+	
+			<RelativeLayout
+	    android:id="@+id/rel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@id/rel1">   		
+        <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dip"
+		android:textColor="#FFFFFF"
+        android:text="湿  度: "
+        tools:context=".LoginActivity" />
+        <EditText
+        android:id="@+id/editText_h"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/textView6"
+        android:ems="10"
+        android:editable="false"
+        android:minWidth="100dip"
+        android:text="00 %" />
+        </RelativeLayout>
+        
+	<RelativeLayout
+	    android:id="@+id/rel3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@id/rel2">
+   		<TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dip"
+		android:textColor="#FFFFFF"
+        android:text="灯  光: "
+        tools:context=".LoginActivity" />
+        <EditText
+        android:id="@+id/editText_l"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/textView4"
+        android:ems="10"
+        android:editable="false"
+        android:minWidth="100dip"
+        android:text="关闭" />
+        </RelativeLayout>
+        
+	<RelativeLayout
+        android:id="@+id/rel4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+         android:layout_below="@id/rel3">
+   		<TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dip"
+		android:textColor="#FFFFFF"
+        android:text="家  门: "
+        tools:context=".LoginActivity" />
+        <EditText
+        android:id="@+id/editText_d"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/textView5"
+        android:ems="10"
+        android:editable="false"
+        android:minWidth="100dip"
+        android:text="关闭" />
+            </RelativeLayout>
+	
+		<RelativeLayout
+	    android:id="@+id/rel5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_below="@id/rel4">
+   		<TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dip"
+		android:textColor="#FFFFFF"
+        android:text="火  灾: "
+        tools:context=".LoginActivity" />
+        <EditText
+        android:id="@+id/editText_f"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/textView44"
+        android:ems="10"
+        android:editable="false"
+        android:minWidth="100dip"
+        android:text="正常" />
+        </RelativeLayout>
+        
+		<CheckBox 
+		android:id="@+id/box"
+		android:text="灯光\n自动"
+		android:textColor="#FFFFFF"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentBottom="true"
+		/>
+		
+		<RelativeLayout
+	    android:id="@+id/rel6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/rel5">
+   		<Button
+        android:id="@+id/btn_lighton"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:text="开启灯光"/>
+        <Button
+        android:id="@+id/btn_lightoff"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/btn_lighton"
+        android:text="关闭灯光" />
+        </RelativeLayout>
+        
+		<RelativeLayout
+	    android:id="@+id/rel7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/rel6">
+   		<Button
+        android:id="@+id/btn_alarmon"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:text="开启报警"/>
+        <Button
+        android:id="@+id/btn_alarmoff"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/btn_alarmon"
+        android:text="关闭报警 "/>
+        </RelativeLayout>
+        
+	<RelativeLayout
+	    android:id="@+id/rel8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/rel7">
+   		<Button
+        android:id="@+id/btn_fanon"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:text="开电风扇"/>
+        <Button
+        android:id="@+id/btn_fanoff"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/btn_fanon"
+        android:text="关电风扇 "/>
+        </RelativeLayout>
+        
+	<RelativeLayout
+	    android:id="@+id/rel9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/rel8">
+   		<Button
+        android:id="@+id/btn_cookeron"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:text="开电饭煲"/>
+        <Button
+        android:id="@+id/btn_cookeroff"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/btn_cookeron"
+        android:text="关电饭煲 "/>
+        </RelativeLayout>
+		
+	<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" >
+	<ImageButton
+        android:id="@+id/return_button"
+        android:src="@drawable/return1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:adjustViewBounds="true" 
+		android:padding="0dip"
+		android:scaleType="fitCenter"
+        >
+   	    </ImageButton>
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/login">
+
+    <ImageView
+		android:id="@+id/gzac"
+		android:layout_width="460px"
+		android:layout_height="200px"
+        android:layout_marginTop="10px" 
+		android:layout_marginLeft="10px">
+	></ImageView>
+	<TextView 
+		android:text="wifi家电远程控制" 
+		android:layout_width="wrap_content" 
+		android:textSize="24dip"
+		android:id="@+id/textView1" 
+		android:layout_height="wrap_content"
+		android:textColor="#FFFF00"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="40dip"
+	></TextView>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dip"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="140dip"
+		android:textColor="#FFFFFF"
+        android:text="控制主机服务器设置 "
+        tools:context=".LoginActivity" />
+    
+        <EditText
+        android:id="@+id/editText_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_marginLeft="93dip"
+		android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textUri"
+        android:minWidth="145dip"
+        android:text="192.168.1.1" />
+    
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dip"
+		android:layout_marginLeft="18dip"
+		android:layout_centerVertical="true"
+		android:textColor="#FFFFFF"
+        android:text="服务器IP:"
+        tools:context=".LoginActivity" />
+    
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_ip">
+   		<TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dip"
+		android:layout_marginLeft="18dip"
+        android:layout_centerVertical="true"
+		android:textColor="#FFFFFF"
+        android:text="端 口 号:"
+        tools:context=".LoginActivity" />
+        <EditText
+        android:id="@+id/editText_port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_marginLeft="93dip"
+        android:ems="10"
+        android:minWidth="145dip"
+        android:text="2001" />
+            </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView1"
+        android:layout_alignParentBottom="true" >
+    	<ImageButton
+        android:id="@+id/wifi_button"
+        android:src="@drawable/login_peple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:adjustViewBounds="true" 
+		android:padding="0dip"
+		android:scaleType="fitCenter"
+        >
+   	    </ImageButton>
+   	    <TextView 
+		android:text="登  录" 
+		android:layout_width="wrap_content" 
+		android:textSize="14dip"
+		android:layout_height="wrap_content"
+		android:textColor="#FFFFFF"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@id/wifi_button"
+	></TextView>
+   	    </RelativeLayout>
+   	
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/textView1"
+        android:layout_alignParentBottom="true" >	
+	<ImageButton
+        android:id="@+id/quit_button"
+        android:src="@drawable/quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:adjustViewBounds="true" 
+		android:padding="0dip"
+		android:scaleType="fitCenter" 	
+        >
+   	    </ImageButton>
+   	<TextView 
+		android:text="退  出" 
+		android:layout_width="wrap_content" 
+		android:textSize="14dip"
+		android:layout_height="wrap_content"
+		android:textColor="#FFFFFF"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@id/quit_button"
+	></TextView>
+   	</RelativeLayout>
+</RelativeLayout>
